@@ -1,32 +1,25 @@
-// LEVEL 2 - IS-A MakhlukHidup
-public abstract class Hewan extends MakhlukHidup {
-    private String jenisMakanan;
+public abstract class Hewan extends MahlukHidup {
 
-    protected Hewan(String nama, int umur, String jenisMakanan) {
-        super(nama, umur);      // SUPER constructor
+    private JenisMakanan jenisMakanan;
+    private JenisReproduksi jenisReproduksi;
+
+    public Hewan(
+            String nama,
+            String namaIlmiah,
+            double usia,
+            double berat,
+            Set<String> habitat,
+            JenisMakanan jenisMakanan,
+            JenisReproduksi jenisReproduksi
+    ) {
+        super(nama, namaIlmiah, usia, berat, habitat);
+
         this.jenisMakanan = jenisMakanan;
+        this.jenisReproduksi = jenisReproduksi;
     }
 
-    public String getJenisMakanan() { return jenisMakanan; }
+    public abstract void makan();
+    public abstract void bergerak();
 
-    // OVERRIDING
-    @Override
-    public void makan() {
-        System.out.println(getNama() + " makan " + jenisMakanan);
-    }
-
-    // OVERLOADING: nama sama, parameter beda
-    public void makan(String makanan) {
-        System.out.println(getNama() + " makan " + makanan + " (bukan makanan biasa)");
-    }
-
-    public void makan(String makanan, int porsi) {
-        System.out.println(getNama() + " makan " + porsi + " porsi " + makanan);
-    }
-
-    @Override
-    public void tampilkanInfo() {
-        super.tampilkanInfo();  // SUPER method
-        System.out.println("Makanan : " + jenisMakanan);
-    }
+    // Getters dan setters
 }

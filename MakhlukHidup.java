@@ -1,49 +1,89 @@
-// LEVEL 1 - ABSTRACT CLASS (abstraction)
-public abstract class MakhlukHidup {
-    // ENCAPSULATION: atribut private
+import java.util.Set;
+
+abstract class MahlukHidup {
+
+    // Atribut
     private String nama;
-    private int umur;
+    private String namaIlmiah;
+    private double usia;
+    private double berat;
+    private Set<String> habitat;
+    private boolean masihHidup;
 
-    // STATIC: dimiliki kelas, bukan objek
-    private static int jumlahMakhluk = 0;
-    // FINAL: konstanta
-    public static final String KERAJAAN = "Biologi";
-
-    // CONSTRUCTOR
-    public MakhlukHidup(String nama, int umur) {
-        this.nama = nama;       // THIS
-        setUmur(umur);          // validasi lewat setter
-        jumlahMakhluk++;
+    // Constructor
+    public MahlukHidup(
+            String nama,
+            String namaIlmiah,
+            double usia,
+            double berat,
+            Set<String> habitat
+    ) {
+        this.nama = nama;
+        this.namaIlmiah = namaIlmiah;
+        this.usia = usia;
+        this.berat = berat;
+        this.habitat = habitat;
+        this.masihHidup = true;
     }
 
-    public String getNama() { return nama; }
-    public int getUmur() { return umur; }
+    // Abstract Methods
+    public abstract void tumbuh();
 
-    public void setUmur(int umur) {
-        if (umur < 0) {
-            throw new IllegalArgumentException("Umur tidak boleh negatif: " + umur);
+    public abstract void berkembangBiak();
+
+    public abstract void bernapas();
+
+    public abstract void meresponsRangsangan();
+
+    // Concrete Methods
+    public void mati() {
+        this.masihHidup = false;
+        System.out.println(nama + " telah mati.");
+    }
+
+    public void tambahUsia(double tahun) {
+        if (tahun > 0 && masihHidup) {
+            this.usia += tahun;
         }
-        this.umur = umur;
     }
 
-    public static int getJumlahMakhluk() { return jumlahMakhluk; }
-
-    // FINAL METHOD: tidak boleh di-override
-    public final void bernapas() {
-        System.out.println(nama + " sedang bernapas");
+    // Getters
+    public String getNama() {
+        return nama;
     }
 
-    // ABSTRACT METHOD: wajib di-override subclass
-    public abstract void makan();
-    public abstract void suaraKhas();
-
-    public void tampilkanInfo() {
-        System.out.println("Nama : " + nama);
-        System.out.println("Umur : " + umur + " tahun");
+    public String getNamaIlmiah() {
+        return namaIlmiah;
     }
 
-    @Override
-    public String toString() {
-        return getClass().getSimpleName() + "[" + nama + ", " + umur + " th]";
+    public double getUsia() {
+        return usia;
+    }
+
+    public double getBerat() {
+        return berat;
+    }
+
+    public Set<String> getHabitat() {
+        return habitat;
+    }
+
+    public boolean isMasihHidup() {
+        return masihHidup;
+    }
+
+    // Setters
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public void setBerat(double berat) {
+        if (berat > 0) {
+            this.berat = berat;
+        }
+    }
+
+    public void setHabitat(Set<String> habitat) {
+        this.habitat = habitat;
     }
 }

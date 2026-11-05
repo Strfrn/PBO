@@ -1,25 +1,34 @@
-// LEVEL 2 - IS-A MakhlukHidup
-public abstract class Tumbuhan extends MakhlukHidup {
-    private String warnaDaun;
+import java.util.Set;
 
-    protected Tumbuhan(String nama, int umur, String warnaDaun) {
-        super(nama, umur);
-        this.warnaDaun = warnaDaun;
+public abstract class Tumbuhan extends MahlukHidup {
+
+    private JenisReproduksiTumbuhan jenisReproduksi;
+    private TingkatKebutuhan kebutuhanAir;
+    private TingkatKebutuhan kebutuhanCahaya;
+    private JenisPertumbuhan jenisPertumbuhan;
+
+    public Tumbuhan(
+            String nama,
+            String namaIlmiah,
+            double usia,
+            double berat,
+            Set<String> habitat,
+            JenisReproduksiTumbuhan jenisReproduksi,
+            TingkatKebutuhan kebutuhanAir,
+            TingkatKebutuhan kebutuhanCahaya,
+            JenisPertumbuhan jenisPertumbuhan
+    ) {
+        super(nama, namaIlmiah, usia, berat, habitat);
+
+        this.jenisReproduksi = jenisReproduksi;
+        this.kebutuhanAir = kebutuhanAir;
+        this.kebutuhanCahaya = kebutuhanCahaya;
+        this.jenisPertumbuhan = jenisPertumbuhan;
     }
 
-    public String getWarnaDaun() { return warnaDaun; }
+    public abstract void fotosintesis();
+    public abstract void menyerapAir();
+    public abstract void menyerapNutrisi();
 
-    public void fotosintesis() {
-        System.out.println(getNama() + " berfotosintesis dengan daun " + warnaDaun);
-    }
-
-    @Override
-    public void makan() {
-        System.out.println(getNama() + " menyerap air dan mineral lewat akar");
-    }
-
-    @Override
-    public void suaraKhas() {
-        System.out.println(getNama() + ": (diam, tumbuhan tidak bersuara)");
-    }
+    // Getters dan setters
 }
