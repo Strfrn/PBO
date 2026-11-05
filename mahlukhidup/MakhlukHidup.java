@@ -1,3 +1,5 @@
+package mahlukhidup;
+
 import java.util.Set;
 
 abstract class MahlukHidup {

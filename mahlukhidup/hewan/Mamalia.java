@@ -1,12 +1,14 @@
+package mahlukhidup.hewan;
+
 public abstract class Mamalia extends Hewan {
 
     private JenisGigi jenisGigi;
 
     public Mamalia(
-            // Parameter dari MahlukHidup dan Hewan
+            // Parameter dari MahlukHidup dan mahlukhidup.hewan.Hewan
             JenisGigi jenisGigi
     ) {
-        super(/* parameter Hewan */);
+        super(/* parameter mahlukhidup.hewan.Hewan */);
         this.jenisGigi = jenisGigi;
     }
 

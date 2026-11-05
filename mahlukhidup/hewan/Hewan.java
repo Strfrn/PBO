@@ -1,3 +1,5 @@
+package mahlukhidup.hewan;
+
 public abstract class Hewan extends MahlukHidup {
 
     private JenisMakanan jenisMakanan;

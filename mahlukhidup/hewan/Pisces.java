@@ -1,11 +1,14 @@
+package mahlukhidup.hewan;
+
 import java.util.Set;
-public abstract class Aves extends Hewan {
+
+public abstract class Pisces extends Hewan {
 
     // Atribut
-    private boolean kemampuanTerbang;
+    private JenisHabitatAir jenisHabitatAir;
 
     // Constructor
-    public Aves(
+    public Pisces(
             String nama,
             String namaIlmiah,
             double usia,
@@ -13,7 +16,7 @@ public abstract class Aves extends Hewan {
             Set<String> habitat,
             JenisMakanan jenisMakanan,
             JenisReproduksi jenisReproduksi,
-            boolean kemampuanTerbang
+            JenisHabitatAir jenisHabitatAir
     ) {
         super(
                 nama,
@@ -25,16 +28,16 @@ public abstract class Aves extends Hewan {
                 jenisReproduksi
         );
 
-        this.kemampuanTerbang = kemampuanTerbang;
+        this.jenisHabitatAir = jenisHabitatAir;
     }
 
     // Getter
-    public boolean isKemampuanTerbang() {
-        return kemampuanTerbang;
+    public JenisHabitatAir getJenisHabitatAir() {
+        return jenisHabitatAir;
     }
 
     // Setter
-    public void setKemampuanTerbang(boolean kemampuanTerbang) {
-        this.kemampuanTerbang = kemampuanTerbang;
+    public void setJenisHabitatAir(JenisHabitatAir jenisHabitatAir) {
+        this.jenisHabitatAir = jenisHabitatAir;
     }
 }

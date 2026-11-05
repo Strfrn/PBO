@@ -1,3 +1,7 @@
+package mahlukhidup.tumbuhan;
+
+import mahlukhidup.MahlukHidup;
+
 import java.util.Set;
 
 public abstract class Tumbuhan extends MahlukHidup {

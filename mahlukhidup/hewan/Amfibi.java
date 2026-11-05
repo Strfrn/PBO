@@ -1,3 +1,5 @@
+package mahlukhidup.hewan;
+
 import java.util.Set;
 
 public abstract class Amfibi extends Hewan {
