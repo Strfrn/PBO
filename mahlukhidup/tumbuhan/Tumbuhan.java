@@ -1,6 +1,9 @@
 package mahlukhidup.tumbuhan;
 
 import mahlukhidup.MahlukHidup;
+import mahlukhidup.enums.JenisReproduksiTumbuhan;
+import mahlukhidup.enums.TingkatKebutuhan;
+import mahlukhidup.enums.JenisPertumbuhan;
 
 import java.util.Set;
 
@@ -34,5 +37,37 @@ public abstract class Tumbuhan extends MahlukHidup {
     public abstract void menyerapAir();
     public abstract void menyerapNutrisi();
 
-    // Getters dan setters
+    // Getters
+    public JenisReproduksiTumbuhan getJenisReproduksi() {
+        return jenisReproduksi;
+    }
+
+    public TingkatKebutuhan getKebutuhanAir() {
+        return kebutuhanAir;
+    }
+
+    public TingkatKebutuhan getKebutuhanCahaya() {
+        return kebutuhanCahaya;
+    }
+
+    public JenisPertumbuhan getJenisPertumbuhan() {
+        return jenisPertumbuhan;
+    }
+
+    // Setters
+    public void setJenisReproduksi(JenisReproduksiTumbuhan jenisReproduksi) {
+        this.jenisReproduksi = jenisReproduksi;
+    }
+
+    public void setKebutuhanAir(TingkatKebutuhan kebutuhanAir) {
+        this.kebutuhanAir = kebutuhanAir;
+    }
+
+    public void setKebutuhanCahaya(TingkatKebutuhan kebutuhanCahaya) {
+        this.kebutuhanCahaya = kebutuhanCahaya;
+    }
+
+    public void setJenisPertumbuhan(JenisPertumbuhan jenisPertumbuhan) {
+        this.jenisPertumbuhan = jenisPertumbuhan;
+    }
 }

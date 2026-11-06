@@ -1,13 +1,16 @@
 package mahlukhidup.tumbuhan;
+
 import mahlukhidup.enums.JenisStrobilus;
+import mahlukhidup.enums.JenisReproduksiTumbuhan;
+import mahlukhidup.enums.TingkatKebutuhan;
+import mahlukhidup.enums.JenisPertumbuhan;
+
 import java.util.Set;
 
 public abstract class Gymnospermae extends Tumbuhan {
 
-    // Atribut
     private JenisStrobilus jenisStrobilus;
 
-    // Constructor
     public Gymnospermae(
             String nama,
             String namaIlmiah,

@@ -1,10 +1,12 @@
 package mahlukhidup.hewan;
 
+import mahlukhidup.enums.JenisMakanan;
+import mahlukhidup.enums.JenisReproduksi;
+
 import java.util.Set;
 
 public abstract class Amfibi extends Hewan {
 
-    // Constructor
     public Amfibi(
             String nama,
             String namaIlmiah,
@@ -14,14 +16,6 @@ public abstract class Amfibi extends Hewan {
             JenisMakanan jenisMakanan,
             JenisReproduksi jenisReproduksi
     ) {
-        super(
-                nama,
-                namaIlmiah,
-                usia,
-                berat,
-                habitat,
-                jenisMakanan,
-                jenisReproduksi
-        );
+        super(nama, namaIlmiah, usia, berat, habitat, jenisMakanan, jenisReproduksi);
     }
 }

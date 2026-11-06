@@ -1,12 +1,14 @@
 package mahlukhidup.hewan;
 
+import mahlukhidup.enums.JenisMakanan;
+import mahlukhidup.enums.JenisReproduksi;
+
 import java.util.Set;
+
 public abstract class Aves extends Hewan {
 
-    // Atribut
     private boolean kemampuanTerbang;
 
-    // Constructor
     public Aves(
             String nama,
             String namaIlmiah,
@@ -17,16 +19,7 @@ public abstract class Aves extends Hewan {
             JenisReproduksi jenisReproduksi,
             boolean kemampuanTerbang
     ) {
-        super(
-                nama,
-                namaIlmiah,
-                usia,
-                berat,
-                habitat,
-                jenisMakanan,
-                jenisReproduksi
-        );
-
+        super(nama, namaIlmiah, usia, berat, habitat, jenisMakanan, jenisReproduksi);
         this.kemampuanTerbang = kemampuanTerbang;
     }
 

@@ -1,12 +1,15 @@
 package mahlukhidup.tumbuhan;
+
+import mahlukhidup.enums.JenisReproduksiTumbuhan;
+import mahlukhidup.enums.TingkatKebutuhan;
+import mahlukhidup.enums.JenisPertumbuhan;
+
 import java.util.Set;
 
 public abstract class Lumut extends Tumbuhan {
 
-    // Atribut
     private boolean memilikiPembuluhAngkut = false;
 
-    // Constructor
     public Lumut(
             String nama,
             String namaIlmiah,

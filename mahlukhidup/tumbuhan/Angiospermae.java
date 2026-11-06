@@ -1,13 +1,16 @@
 package mahlukhidup.tumbuhan;
+
 import mahlukhidup.enums.JenisKepingBiji;
+import mahlukhidup.enums.JenisReproduksiTumbuhan;
+import mahlukhidup.enums.TingkatKebutuhan;
+import mahlukhidup.enums.JenisPertumbuhan;
+
 import java.util.Set;
 
 public abstract class Angiospermae extends Tumbuhan {
 
-    // Atribut
     private JenisKepingBiji jenisKepingBiji;
 
-    // Constructor
     public Angiospermae(
             String nama,
             String namaIlmiah,
