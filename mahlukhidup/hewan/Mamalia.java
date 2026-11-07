@@ -17,8 +17,7 @@ public abstract class Mamalia extends Hewan {
             Set<String> habitat,
             JenisMakanan jenisMakanan,
             JenisReproduksi jenisReproduksi,
-            JenisGigi jenisGigi
-    ) {
+            JenisGigi jenisGigi) {
         super(
                 nama,
                 namaIlmiah,
@@ -26,8 +25,7 @@ public abstract class Mamalia extends Hewan {
                 berat,
                 habitat,
                 jenisMakanan,
-                jenisReproduksi
-        );
+                jenisReproduksi);
 
         this.jenisGigi = jenisGigi;
     }
@@ -41,4 +39,5 @@ public abstract class Mamalia extends Hewan {
     public void setJenisGigi(JenisGigi jenisGigi) {
         this.jenisGigi = jenisGigi;
     }
+
 }

@@ -3,6 +3,7 @@ package mahlukhidup.hewan;
 import java.util.Set;
 import mahlukhidup.enums.hewan.JenisMakanan;
 import mahlukhidup.enums.hewan.JenisReproduksi;
+
 public abstract class Reptilia extends Hewan {
 
     // Constructor
@@ -13,8 +14,7 @@ public abstract class Reptilia extends Hewan {
             double berat,
             Set<String> habitat,
             JenisMakanan jenisMakanan,
-            JenisReproduksi jenisReproduksi
-    ) {
+            JenisReproduksi jenisReproduksi) {
         super(
                 nama,
                 namaIlmiah,
@@ -22,10 +22,10 @@ public abstract class Reptilia extends Hewan {
                 berat,
                 habitat,
                 jenisMakanan,
-                jenisReproduksi
-        );
+                jenisReproduksi);
     }
 
     // Method
     public abstract void bergantiKulit();
+
 }
