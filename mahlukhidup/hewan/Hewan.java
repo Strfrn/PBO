@@ -1,4 +1,8 @@
 package mahlukhidup.hewan;
+import mahlukhidup.MahlukHidup;
+import mahlukhidup.enums.hewan.JenisMakanan;
+import mahlukhidup.enums.hewan.JenisReproduksi;
+import java.util.Set;
 
 public abstract class Hewan extends MahlukHidup {
 
@@ -23,5 +27,19 @@ public abstract class Hewan extends MahlukHidup {
     public abstract void makan();
     public abstract void bergerak();
 
-    // Getters dan setters
+    public JenisMakanan getJenisMakanan() {
+        return jenisMakanan;
+    }
+
+    public void setJenisMakanan(JenisMakanan jenisMakanan) {
+        this.jenisMakanan = jenisMakanan;
+    }
+
+    public JenisReproduksi getJenisReproduksi() {
+        return jenisReproduksi;
+    }
+
+    public void setJenisReproduksi(JenisReproduksi jenisReproduksi) {
+        this.jenisReproduksi = jenisReproduksi;
+    }
 }

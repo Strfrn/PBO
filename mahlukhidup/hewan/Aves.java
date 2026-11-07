@@ -1,6 +1,8 @@
 package mahlukhidup.hewan;
 
 import java.util.Set;
+import mahlukhidup.enums.hewan.JenisMakanan;
+import mahlukhidup.enums.hewan.JenisReproduksi;
 public abstract class Aves extends Hewan {
 
     // Atribut

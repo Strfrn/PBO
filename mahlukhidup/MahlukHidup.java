@@ -2,7 +2,7 @@ package mahlukhidup;
 
 import java.util.Set;
 
-abstract class MahlukHidup {
+public abstract class MahlukHidup {
 
     // Atribut
     private String nama;

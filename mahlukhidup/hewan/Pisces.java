@@ -1,11 +1,14 @@
 package mahlukhidup.hewan;
 
+import mahlukhidup.enums.hewan.JenisHabitat;
+import mahlukhidup.enums.hewan.JenisMakanan;
+import mahlukhidup.enums.hewan.JenisReproduksi;
 import java.util.Set;
 
 public abstract class Pisces extends Hewan {
 
     // Atribut
-    private JenisHabitatAir jenisHabitatAir;
+    private JenisHabitat jenisHabitatAir;
 
     // Constructor
     public Pisces(
@@ -16,7 +19,7 @@ public abstract class Pisces extends Hewan {
             Set<String> habitat,
             JenisMakanan jenisMakanan,
             JenisReproduksi jenisReproduksi,
-            JenisHabitatAir jenisHabitatAir
+            JenisHabitat jenisHabitatAir
     ) {
         super(
                 nama,
@@ -32,12 +35,12 @@ public abstract class Pisces extends Hewan {
     }
 
     // Getter
-    public JenisHabitatAir getJenisHabitatAir() {
+    public JenisHabitat getJenisHabitatAir() {
         return jenisHabitatAir;
     }
 
     // Setter
-    public void setJenisHabitatAir(JenisHabitatAir jenisHabitatAir) {
+    public void setJenisHabitatAir(JenisHabitat jenisHabitatAir) {
         this.jenisHabitatAir = jenisHabitatAir;
     }
 }

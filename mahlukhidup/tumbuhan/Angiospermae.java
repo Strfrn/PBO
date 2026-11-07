@@ -1,5 +1,8 @@
 package mahlukhidup.tumbuhan;
-import mahlukhidup.enums.JenisKepingBiji;
+import mahlukhidup.enums.tumbuhan.JenisKepingBiji;
+import mahlukhidup.enums.tumbuhan.JenisPertumbuhan;
+import mahlukhidup.enums.tumbuhan.JenisReproduksiTumbuhan;
+import mahlukhidup.enums.tumbuhan.TingkatKebutuhan;
 import java.util.Set;
 
 public abstract class Angiospermae extends Tumbuhan {

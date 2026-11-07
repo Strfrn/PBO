@@ -1,4 +1,4 @@
-package mahlukhidup.enums;
+package mahlukhidup.enums.tumbuhan;
 
 public enum JenisKepingBiji {
     MONOKOTIL,
