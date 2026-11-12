@@ -11,7 +11,7 @@ public class LumutDaun extends Lumut {
     public LumutDaun(String nama) {
         super(nama, "Funaria hygrometrica", 0.5, 0.001, Set.of("Tanah Lembab", "Bebatuan"),
                 JenisReproduksiTumbuhan.KEDUANYA, TingkatKebutuhan.TINGGI,
-                TingkatKebutuhan.RENDAH, JenisPertumbuhan.SEMUSIM);
+                TingkatKebutuhan.RENDAH, JenisPertumbuhan.PRIMER);
     }
 
     @Override

@@ -11,7 +11,7 @@ public class PakuSarangBurung extends Paku {
     public PakuSarangBurung(String nama) {
         super(nama, "Asplenium nidus", 2, 3.0, Set.of("Hutan Hujan", "Pohon"),
                 JenisReproduksiTumbuhan.VEGETATIF, TingkatKebutuhan.TINGGI,
-                TingkatKebutuhan.SEDANG, JenisPertumbuhan.TAHUNAN);
+                TingkatKebutuhan.SEDANG, JenisPertumbuhan.PRIMER);
     }
 
     @Override

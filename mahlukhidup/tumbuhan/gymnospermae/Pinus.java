@@ -12,7 +12,7 @@ public class Pinus extends Gymnospermae {
     public Pinus(String nama) {
         super(nama, "Pinus merkusii", 20, 200.0, Set.of("Pegunungan", "Hutan Pinus"),
                 JenisReproduksiTumbuhan.GENERATIF, TingkatKebutuhan.RENDAH,
-                TingkatKebutuhan.TINGGI, JenisPertumbuhan.TAHUNAN, JenisStrobilus.JANTAN_DAN_BETINA);
+                TingkatKebutuhan.TINGGI, JenisPertumbuhan.SEKUNDER, JenisStrobilus.JANTAN_DAN_BETINA);
     }
 
     @Override

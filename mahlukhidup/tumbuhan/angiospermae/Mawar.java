@@ -12,7 +12,7 @@ public class Mawar extends Angiospermae {
     public Mawar(String nama) {
         super(nama, "Rosa hybrida", 1, 0.5, Set.of("Taman", "Dataran Tinggi"),
                 JenisReproduksiTumbuhan.GENERATIF, TingkatKebutuhan.SEDANG,
-                TingkatKebutuhan.TINGGI, JenisPertumbuhan.TAHUNAN, JenisKepingBiji.DIKOTIL);
+                TingkatKebutuhan.TINGGI, JenisPertumbuhan.SEKUNDER, JenisKepingBiji.DIKOTIL);
     }
 
     @Override

@@ -12,7 +12,7 @@ public class Padi extends Angiospermae {
     public Padi(String nama) {
         super(nama, "Oryza sativa", 0.5, 0.1, Set.of("Sawah", "Dataran Rendah"),
                 JenisReproduksiTumbuhan.GENERATIF, TingkatKebutuhan.TINGGI,
-                TingkatKebutuhan.TINGGI, JenisPertumbuhan.SEMUSIM, JenisKepingBiji.MONOKOTIL);
+                TingkatKebutuhan.TINGGI, JenisPertumbuhan.PRIMER, JenisKepingBiji.MONOKOTIL);
     }
 
     @Override

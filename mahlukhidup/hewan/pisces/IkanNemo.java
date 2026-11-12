@@ -3,7 +3,6 @@ package mahlukhidup.hewan.pisces;
 import mahlukhidup.hewan.Pisces;
 import mahlukhidup.enums.JenisMakanan;
 import mahlukhidup.enums.JenisReproduksi;
-import mahlukhidup.enums.JenisHabitatAir;
 import java.util.Set;
 
 public class IkanNemo extends Pisces {
@@ -16,8 +15,7 @@ public class IkanNemo extends Pisces {
                 0.015,
                 Set.of("Terumbu Karang", "Laut Tropis"),
                 JenisMakanan.OMNIVORA,
-                JenisReproduksi.OVIPAR,
-                JenisHabitatAir.AIR_LAUT
+                JenisReproduksi.OVIPAR
         );
     }
 

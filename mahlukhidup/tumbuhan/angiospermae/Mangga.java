@@ -12,7 +12,7 @@ public class Mangga extends Angiospermae {
     public Mangga(String nama) {
         super(nama, "Mangifera indica", 10, 50.0, Set.of("Hutan Tropis", "Kebun"),
                 JenisReproduksiTumbuhan.GENERATIF, TingkatKebutuhan.SEDANG,
-                TingkatKebutuhan.TINGGI, JenisPertumbuhan.TAHUNAN, JenisKepingBiji.DIKOTIL);
+                TingkatKebutuhan.TINGGI, JenisPertumbuhan.SEKUNDER, JenisKepingBiji.DIKOTIL);
     }
 
     @Override

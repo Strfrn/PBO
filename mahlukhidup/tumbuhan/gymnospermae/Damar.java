@@ -12,7 +12,7 @@ public class Damar extends Gymnospermae {
     public Damar(String nama) {
         super(nama, "Agathis dammara", 30, 500.0, Set.of("Hutan Hujan", "Pegunungan"),
                 JenisReproduksiTumbuhan.GENERATIF, TingkatKebutuhan.SEDANG,
-                TingkatKebutuhan.SEDANG, JenisPertumbuhan.TAHUNAN, JenisStrobilus.JANTAN_DAN_BETINA);
+                TingkatKebutuhan.SEDANG, JenisPertumbuhan.SEKUNDER, JenisStrobilus.JANTAN_DAN_BETINA);
     }
 
     @Override

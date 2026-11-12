@@ -11,7 +11,7 @@ public class LumutHati extends Lumut {
     public LumutHati(String nama) {
         super(nama, "Marchantia polymorpha", 0.3, 0.001, Set.of("Tanah Lembab", "Tepi Sungai"),
                 JenisReproduksiTumbuhan.KEDUANYA, TingkatKebutuhan.TINGGI,
-                TingkatKebutuhan.RENDAH, JenisPertumbuhan.SEMUSIM);
+                TingkatKebutuhan.RENDAH, JenisPertumbuhan.PRIMER);
     }
 
     @Override

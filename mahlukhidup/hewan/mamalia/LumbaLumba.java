@@ -3,7 +3,6 @@ package mahlukhidup.hewan.mamalia;
 import mahlukhidup.hewan.Mamalia;
 import mahlukhidup.enums.JenisMakanan;
 import mahlukhidup.enums.JenisReproduksi;
-import mahlukhidup.enums.JenisGigi;
 import java.util.Set;
 
 public class LumbaLumba extends Mamalia {
@@ -16,8 +15,7 @@ public class LumbaLumba extends Mamalia {
                 150.0,
                 Set.of("Laut", "Samudra"),
                 JenisMakanan.KARNIVORA,
-                JenisReproduksi.VIVIPAR,
-                JenisGigi.KARNIVORA
+                JenisReproduksi.VIVIPAR
         );
     }
 

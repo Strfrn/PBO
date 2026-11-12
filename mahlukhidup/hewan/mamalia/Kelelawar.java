@@ -3,7 +3,6 @@ package mahlukhidup.hewan.mamalia;
 import mahlukhidup.hewan.Mamalia;
 import mahlukhidup.enums.JenisMakanan;
 import mahlukhidup.enums.JenisReproduksi;
-import mahlukhidup.enums.JenisGigi;
 import java.util.Set;
 
 public class Kelelawar extends Mamalia {
@@ -16,8 +15,7 @@ public class Kelelawar extends Mamalia {
                 0.8,
                 Set.of("Gua", "Hutan"),
                 JenisMakanan.HERBIVORA,
-                JenisReproduksi.VIVIPAR,
-                JenisGigi.HERBIVORA
+                JenisReproduksi.VIVIPAR
         );
     }
 

@@ -12,7 +12,7 @@ public class PakisHaji extends Gymnospermae {
     public PakisHaji(String nama) {
         super(nama, "Cycas rumphii", 15, 80.0, Set.of("Hutan Tropis", "Pantai"),
                 JenisReproduksiTumbuhan.GENERATIF, TingkatKebutuhan.SEDANG,
-                TingkatKebutuhan.TINGGI, JenisPertumbuhan.TAHUNAN, JenisStrobilus.BETINA);
+                TingkatKebutuhan.TINGGI, JenisPertumbuhan.SEKUNDER, JenisStrobilus.BETINA);
     }
 
     @Override

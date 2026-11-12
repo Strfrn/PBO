@@ -11,7 +11,7 @@ public class LumutTanduk extends Lumut {
     public LumutTanduk(String nama) {
         super(nama, "Anthoceros punctatus", 0.4, 0.001, Set.of("Tanah Lembab", "Hutan"),
                 JenisReproduksiTumbuhan.KEDUANYA, TingkatKebutuhan.TINGGI,
-                TingkatKebutuhan.RENDAH, JenisPertumbuhan.SEMUSIM);
+                TingkatKebutuhan.RENDAH, JenisPertumbuhan.PRIMER);
     }
 
     @Override

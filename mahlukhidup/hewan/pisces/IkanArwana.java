@@ -3,7 +3,6 @@ package mahlukhidup.hewan.pisces;
 import mahlukhidup.hewan.Pisces;
 import mahlukhidup.enums.JenisMakanan;
 import mahlukhidup.enums.JenisReproduksi;
-import mahlukhidup.enums.JenisHabitatAir;
 import java.util.Set;
 
 public class IkanArwana extends Pisces {
@@ -16,8 +15,7 @@ public class IkanArwana extends Pisces {
                 7.0,
                 Set.of("Sungai", "Danau"),
                 JenisMakanan.KARNIVORA,
-                JenisReproduksi.OVIPAR,
-                JenisHabitatAir.AIR_TAWAR
+                JenisReproduksi.OVIPAR
         );
     }
 

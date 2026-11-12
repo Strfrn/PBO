@@ -1,5 +1,7 @@
 package mahlukhidup;
 
+import java.util.Collections;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public abstract class MahlukHidup {
@@ -24,7 +26,7 @@ public abstract class MahlukHidup {
         this.namaIlmiah = namaIlmiah;
         this.usia = usia;
         this.berat = berat;
-        this.habitat = habitat;
+        this.habitat = (habitat != null) ? new LinkedHashSet<>(habitat) : new LinkedHashSet<>();
         this.masihHidup = true;
     }
 
@@ -67,14 +69,14 @@ public abstract class MahlukHidup {
     }
 
     public Set<String> getHabitat() {
-        return habitat;
+        return Collections.unmodifiableSet(habitat);
     }
 
     public boolean isMasihHidup() {
         return masihHidup;
     }
 
-    // Setters
+    // Setters & Mutators
     public void setNama(String nama) {
         this.nama = nama;
     }
@@ -86,6 +88,22 @@ public abstract class MahlukHidup {
     }
 
     public void setHabitat(Set<String> habitat) {
-        this.habitat = habitat;
+        this.habitat = (habitat != null) ? new LinkedHashSet<>(habitat) : new LinkedHashSet<>();
+    }
+
+    public void tambahHabitat(String habitatBaru) {
+        if (habitatBaru != null && !habitatBaru.trim().isEmpty()) {
+            this.habitat.add(habitatBaru);
+        }
+    }
+
+    public void hapusHabitat(String habitatLama) {
+        if (habitatLama != null) {
+            this.habitat.remove(habitatLama);
+        }
+    }
+
+    public boolean adaHabitat(String habitatCari) {
+        return this.habitat.contains(habitatCari);
     }
 }

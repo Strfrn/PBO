@@ -3,7 +3,6 @@ package mahlukhidup.hewan.mamalia;
 import mahlukhidup.hewan.Mamalia;
 import mahlukhidup.enums.JenisMakanan;
 import mahlukhidup.enums.JenisReproduksi;
-import mahlukhidup.enums.JenisGigi;
 import java.util.Set;
 
 public class Kucing extends Mamalia {
@@ -16,8 +15,7 @@ public class Kucing extends Mamalia {
                 4.5,
                 Set.of("Rumah", "Hutan"),
                 JenisMakanan.KARNIVORA,
-                JenisReproduksi.VIVIPAR,
-                JenisGigi.KARNIVORA
+                JenisReproduksi.VIVIPAR
         );
     }
 

@@ -11,7 +11,7 @@ public class SemanggiAir extends Paku {
     public SemanggiAir(String nama) {
         super(nama, "Marsilea crenata", 0.3, 0.02, Set.of("Sawah", "Rawa"),
                 JenisReproduksiTumbuhan.KEDUANYA, TingkatKebutuhan.TINGGI,
-                TingkatKebutuhan.SEDANG, JenisPertumbuhan.SEMUSIM);
+                TingkatKebutuhan.SEDANG, JenisPertumbuhan.PRIMER);
     }
 
     @Override

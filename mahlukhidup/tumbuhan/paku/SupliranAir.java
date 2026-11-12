@@ -11,7 +11,7 @@ public class SupliranAir extends Paku {
     public SupliranAir(String nama) {
         super(nama, "Salvinia molesta", 0.2, 0.01, Set.of("Danau", "Kolam"),
                 JenisReproduksiTumbuhan.VEGETATIF, TingkatKebutuhan.TINGGI,
-                TingkatKebutuhan.TINGGI, JenisPertumbuhan.SEMUSIM);
+                TingkatKebutuhan.TINGGI, JenisPertumbuhan.PRIMER);
     }
 
     @Override
